@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="keywords" content="HTML, CSS, JavaScript, GameJs, Mindustry, MindustryFan Game, FanGame,wedGame">
+  <meta name="description" content="Web Game compatible with cell phones and  pc, Game based on Anuke Developer mindustry, this game you need defend anuke for evil team juction for its anuke can shot router and frog send power ups and upgrades">
+  <meta name="author" content="Pankiwi | enjoy my game 'w'">
+  <meta property="og:title" content="Anuke Game new" />
+  <meta property="og:description" content="Web Game compatible with cell phones and  pc, Game based on Anuke Developer mindustry" />
+  <meta property="og:site-name" content="Anuke Game.io.frog" />
+  <meta property="og:image" content="/src/banner.png" />
+  <meta name="theme-color" content="gray" />
+  <link rel="shortcut icon" href="/src/10100000.png" />
+  <meta charset="UTF-8">
+  <meta name="robots" content="index" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <title>anuke Game</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body style="overflow: hidden">
+  <canvas width="100" height="100">
+    sorry you drive is shit
+  </canvas>
+  <div id="modal1">
+    <!--- ui for pc --->
+    <div class="div hidden_" id="ui-playerStat">
+      <div class="statTxt">
+        <div>
+          <img src="./assets/sprites/router.png" alt="" />
+          <span>Routers Points: </span><span id="rp_2"></span>
+        </div>
+        <div>
+          <img src=" ./assets/sprites/coin.png" alt="" />
+          <span>Coins: </span><span id="c_2"></span>
+        </div>
+        <div>
+          <button id="pauseBtn" class="button_">Pause</button>
+          <button id="shopBtn" class="button_">Shop</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="shop-modal" class="shopModal hidden_">
+    <div class="modal">
+      <button id="closeShop" class="shop-close-btn">close</button>
+      <h1>Floppa Shop</h1>
+      <div class="shop-img">
+        <img src="./assets/sprites/shop.png" alt="" />
+      </div>
+      <h3>Flop:<span id="floppaSay"></span></h3>
+      <div>
+        <h2>Items</h2>
+      </div>
+      <div class="shop-items" id="shop">
+        <div class="shop-item">
+          <h3 class="shop-item-title">banana</h3>
+          <img class="shop-item-img" src="./assets/sprites/anuke.png" alt="" />
+          <p>ababab babab abababbab ababa</p>
+          <div class="shop-item-buyPrice">
+            <img src="./assets/sprites/coin.png" alt="" /> <span>0</span>
+            <button class="shop-item-button">buy</button> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modalPop show_" id="ui-info-1">
+    <div class="modal">
+      <h1>welcome anuke game</h1>
+      <p>aim to collect anuke coins defend, although don't let anuke die at all costs, buy upgrades for anuke at the floppa shop</p>
+      <h3>how defend anuke</h3>
+      <p>Enemies are generated on the screen with the passing of time, they will be generated faster and even special enemies, how to defend, click on the screen you can shoot</p>
+      <h3>who is anuke</h3>
+      <p> is a bullet</p>
+      <h3>what is anuke coins/ anucoins</h3>
+      <p>anuke coins are coins necessary to exchange for anuke improvements, these have a 50% probability for each damaged enemy you will be given an anuke coin</p>
+      <h2>[click for next page]</h2>
+    </div>
+  </div>
+  <div class="modalPop hidden_" id="ui-info-2">
+    <div class="modal">
+      <h3>controls</h3>
+      <p>use click for shots, if you drive is pc use [space] for pause game, if you drive is mobil next door where the stats are standing and open the floppa store</p>
+      <h3>floppa shop</h3>
+      <p>floppa shop where you can exchange anuke coins for powerups, the store will only change the purchaseable items every time you buy one, if you buy all of them you will pay for the floppa university</p>
+      <h3>power ups</h3>
+      <p>the power ups are are temporary actions to help survive, they will rarely appear they will be containers that will move in a straight line</p>
+      <h1>¿are you ready to play?</h1>
+      <h2>[click for start game]</h2>
+    </div>
+  </div>
+  <div class="modalPop hidden_" id="ui-dead">
+    <div class="modal-2">
+      <h1>End Game</h1>
+      <h2>Points: <span id="ui-dead-points">0</span></h2>
+      <h2>Coins: <span id="ui-dead-coins">0</span></h2>
+      <button class="button-info" id="resetGame">Reset Game</button>
+    </div>
+  </div>
+  <p>v10.0</p>
+  <script src="./src/global.js"></script>
+  <script src="./src/sounds.js"></script>
+  <script src="./src/lib/draw.js"></script>
+  <script src="./src/lib/sound.js"></script>
+  <script src="./src/lib/viewport.js"></script>
+  <script src="./src/lib/mathFs.js"></script>
+  <script src="./src/lib/timer.js"></script>
+  <script src="./src/lib/effect.js"></script>
+  <script src="./src/entitys/gameObject.js"></script>
+  <script src="./src/entitys/entity.js"></script>
+  <script src="./src/entitys/entityMove.js"></script>
+  <script src="./src/entitys/particle.js"></script>
+  <script src="./src/entitys/entityEnemy.js"></script>
+  <script src="./src/entitys/entityPlayer.js"></script>
+  <script src="./src/entitys/enemys/enemy.js"></script>
+  <script src="./src/entitys/bullet/bullet.js"></script>
+  <script src="./src/entitys/bullet/bulletHoming.js"></script>
+  <script src="./src/entitys/bullet/bulletRicochet.js"></script>
+  <script src="./src/entitys/banana.js"></script>
+  <script src="./src/animationTxt.js"></script>
+  <script src="./src/playerShotConfig.js"></script>
+  <script src="./src/shopClass.js"></script>
+  <script src="./src/effects.js"></script>
+  <script src="./src/SpawRandom.js"></script>
+  <script src="./src/generationInterval.js"></script>
+  <script src="./src/game.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    let sprites = ["anuke","router","hull","junction","shop","coin","banana","distributor","tntRouter"];
+    let loadSprites = [];
+    for(let i in sprites){
+      let object = {id: sprites[i], imagePath: `./assets/sprites/${sprites[i]}.png`};
+      loadSprites.push(object);
+    };
+    global.atlas.loadImages(loadSprites);
+    let game = new Game();
+    window.onload = () => {
+      document.addEventListener('click', () => {
+        if (!game.startGame) {
+          if (document.getElementById('ui-info-1').classList.contains("show_") && document.getElementById('ui-info-2').classList.contains("show_")) {
+            game.InitGame();
+            document.getElementById('ui-info-1').classList.remove("show_")
+            document.getElementById('ui-info-2').classList.remove("show_")
+            document.getElementById('ui-info-1').classList.add("hidden_")
+            document.getElementById('ui-info-2').classList.add("hidden_")
+          } else {
+            if (document.getElementById('ui-info-1').classList.contains("show_")) {
+              document.getElementById('ui-info-2').classList.add('show_')
+            };
+          }
+
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

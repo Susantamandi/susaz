@@ -1,0 +1,84 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://192.168.43.85:5555/#/
+Subject: Balloon File Transfer
+Date: Thu, 14 Jul 2022 15:58:02 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Tm9c5NynydgRtFl27Aj3Qu6l2fzAiX3QGpcvCXDpig----"
+
+
+------MultipartBoundary--Tm9c5NynydgRtFl27Aj3Qu6l2fzAiX3QGpcvCXDpig----
+Content-Type: text/html
+Content-ID: <frame-FBA661F296A455AAF183BB43C95F95AB@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: http://192.168.43.85:5555/#/
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-6648c8c4-1b06-4e7e-9d4a-15803a1658b4@mhtml.blink" /><link rel="stylesheet" type="text/css" href="cid:css-678ea983-1656-4e2a-b4d9-821e7b78cbb6@mhtml.blink" />
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="http://192.168.43.85:5555/">
+
+  
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="File Transfer">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Balloon File Transfer">
+  <link rel="apple-touch-icon" href="http://192.168.43.85:5555/icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="http://192.168.43.85:5555/favicon.png">
+
+  <title>Balloon File Transfer</title>
+  <link rel="manifest" href="http://192.168.43.85:5555/manifest.json">
+<meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta id="flutterweb-theme" name="theme-color" content="#4caf50"></head>
+<body flt-renderer="canvaskit (requested explicitly)" flt-build-mode="release" spellcheck="false" style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none; font: 14px sans-serif; color: red;">
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  
+  <flt-glass-pane style="position: absolute; inset: 0px;"><flt-scene-host aria-hidden="true" style="pointer-events: none;"><flt-scene><flt-canvas-container><canvas width="722" height="1287" style="position: absolute; width: 424.706px; height: 757.059px;"></canvas></flt-canvas-container><div id="dropzone-container-0" style="pointer-events: auto; border: none; animation-name: dropzoneReady; animation-duration: 0.001s; width: 380.118px; height: 119.686px; position: absolute; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 22, 557.372); opacity: 1; cursor: default;"></div><flt-canvas-container><canvas width="722" height="1287" style="position: absolute; width: 424.706px; height: 757.059px;"></canvas></flt-canvas-container></flt-scene></flt-scene-host></flt-glass-pane><flt-ruler-host style="position: fixed; visibility: hidden; overflow: hidden; top: 0px; left: 0px; width: 0px; height: 0px;"></flt-ruler-host>
+
+
+</body></html>
+------MultipartBoundary--Tm9c5NynydgRtFl27Aj3Qu6l2fzAiX3QGpcvCXDpig----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-6648c8c4-1b06-4e7e-9d4a-15803a1658b4@mhtml.blink
+
+@charset "utf-8";
+
+@keyframes dropzoneReady { 
+  0% { clip: rect(1px, auto, auto, auto); }
+  100% { clip: rect(0px, auto, auto, auto); }
+}
+------MultipartBoundary--Tm9c5NynydgRtFl27Aj3Qu6l2fzAiX3QGpcvCXDpig----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-678ea983-1656-4e2a-b4d9-821e7b78cbb6@mhtml.blink
+
+@charset "utf-8";
+
+flt-ruler-host p, flt-scene p { margin: 0px; }
+
+flt-semantics input[type="range"] { appearance: none; width: 100%; position: absolute; border: none; inset: 0px; }
+
+input::selection { background-color: transparent; }
+
+textarea::selection { background-color: transparent; }
+
+flt-semantics input, flt-semantics textarea, flt-semantics [contenteditable="true"] { caret-color: transparent; }
+
+.transparentTextEditing:-webkit-autofill, .transparentTextEditing:-webkit-autofill:hover, .transparentTextEditing:-webkit-autofill:focus, .transparentTextEditing:-webkit-autofill:active { transition-delay: 99999s; }
+------MultipartBoundary--Tm9c5NynydgRtFl27Aj3Qu6l2fzAiX3QGpcvCXDpig------

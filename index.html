@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Home</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome JS -->
+    <script defer src="font/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="font/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+
+<style type="text/css" media="all">
+
+
+
+body{
+     
+      background-color: #000050;
+}
+
+.black{
+        background-color: #000000;
+        color: Green;
+    }
+        .turq {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSitTenp7b2_evBA7HCdkrR4ystjIKPuEjSDw&usqp=CAU');
+        color: white;
+        border-radius: 2px;
+        border: 30px black;
+        
+        
+    }
+        .green {
+        background-color:turquoise;
+        color: Black;
+    }
+
+    
+</style>
+
+
+
+<style>
+* {box-sizing: border-box;}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  max-height: 100%;
+  padding:0px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background: #f1f1f1;
+  text-align: center;
+}
+#sidebar{
+    background: ;
+}
+
+</style>
+
+
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Nil</a>
+                        </li>
+                        <li>
+                            <a href="#">Nil</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="button" href="#popup1">About Game</a>
+                    
+                    
+                    
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="2048.html">Game</a>
+                        </li>
+                        <li>
+                            <a href="#">none</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="d/index.html">Devlooer</a>
+                </li>
+                <li>
+                    <a href="#contactsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contact</a>
+                    <ul class="collapse list-unstyled" id="contactsSubmenu">
+                        <li>
+                            <a href="mailto:mathobabasusantamandi@gmail.com">Mail</a>
+                        </li>
+                        <li>
+                            <a href="whatsapp">Whatsapp</a>
+                        </li>
+                        <li>
+                            <a href="#">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/nexsusaz">Facebook</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a onclick="myFunction0()">Style Mode</a>
+                </li>
+                <li>
+                    <a onclick="myFunction1()" >Turquoise</a>
+                </li>
+                <li>
+                    <a onclick="myFunction2()">Black Mode</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar">
+                <div class="container-fluid">
+
+                    <button id="sidebarCollapse" class="btn " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="2048.html">Game</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                  
+            </nav>
+            <br /><br /><br /><br /><br />
+   <div>
+    <a href="start.html"><img class="imgstart" src="image/start.png" alt="" /></a>
+    
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+  </div>
+    
+    
+    <style type="text/css" media="all">
+      h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 0.5px solid red;
+  border-right: none;
+  border-left: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 0px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 100%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 100%;
+  }
+  .popup{
+    width: 100%;
+  }
+}  
+    </style>
+    <div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>About and How to</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+		    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    </p>
+    <hr>
+    <p>
+    Created by <a href="mailto:mathobabasusantamandi@gmail.com"><b>Susanta</b></a> Helped Me To Create <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+                        
+                    
+		</div>
+		       <a style="width:25%;
+		       align-content:center;
+		       text-align:center;
+		       float:left;
+		       border:2px solid black;
+		       background-color:none;
+		       " href="mailto:mathobabasusantamandi@gmail.com">Mail</a>
+                        <a style="width:25%;
+                        align-content:center;
+		       text-align:center;
+                        float:left;
+		       border:2px solid black;
+		       background-color:none;
+		       " href="whatsapp">WA</a>
+                            <a style="width:25%;
+                            align-content:center;
+		       text-align:center;
+                           float:right;
+		       border:2px solid black;
+		       background-color:none;
+		       " href="#">YT</a>
+                        <a style="width:25%;
+                        align-content:center;
+		       text-align:center;
+                        float:right;
+		       border:2px solid black;
+		       background-color:none;
+		       " href="https://facebook.com/nexsusaz">FB</a>
+                     
+	</div>
+</div>
+    
+    
+      
+<style type="text/css" media="all">
+    .imgstart{
+        height: auto;
+        width: 100%;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jqueryslim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/2048.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    
+    
+    
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+      
+</body>
+
+</html>
